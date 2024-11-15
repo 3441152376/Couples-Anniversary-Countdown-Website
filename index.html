@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李鹏 ❤️ 沙雷雷 - 纪念日倒计时</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="snowfall-container"></div>
+    
+    <div class="animated-background">
+        <div class="hearts">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+        <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title-box">
+            <h1><span class="name">李鹏</span> <span class="heart-icon">❤️</span> <span class="name">沙雷雷</span></h1>
+            <p class="subtitle">记录我们的每一个特别时刻</p>
+        </div>
+        
+        <div class="anniversary-list" id="anniversaryList">
+            <!-- 纪念日列表将在这里动态显示 -->
+        </div>
+        
+        <button id="addNewBtn" class="btn add-btn">
+            <i class="fas fa-plus"></i> 添加新纪念日
+        </button>
+
+        <div id="addModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>✨ 添加新纪念日 ✨</h2>
+                </div>
+                <input type="password" id="password" placeholder="请输入密码" class="input">
+                <input type="text" id="eventName" placeholder="纪念日名称" class="input">
+                <input type="date" id="eventDate" class="input">
+                <div class="button-group">
+                    <button id="submitBtn" class="btn submit-btn">确认</button>
+                    <button id="cancelBtn" class="btn cancel-btn">取消</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>✨ 修改纪念日 ✨</h2>
+                </div>
+                <input type="password" id="editPassword" placeholder="请输入密码" class="input">
+                <input type="text" id="editEventName" placeholder="纪念日名称" class="input">
+                <input type="date" id="editEventDate" class="input">
+                <div class="button-group">
+                    <button id="updateBtn" class="btn submit-btn">确认修改</button>
+                    <button id="editCancelBtn" class="btn cancel-btn">取消</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="deleteModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>❌ 删除纪念日</h2>
+                </div>
+                <p class="delete-warning">确定要删除这个纪念日吗？</p>
+                <input type="password" id="deletePassword" placeholder="请输入密码" class="input">
+                <div class="button-group">
+                    <button id="confirmDeleteBtn" class="btn delete-btn">确认删除</button>
+                    <button id="deleteCancelBtn" class="btn cancel-btn">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
